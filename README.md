@@ -22,6 +22,7 @@ NOTE: id is set to 500 for golden ticket attack.
 
 ![OnPaste 20220614-121203](https://user-images.githubusercontent.com/106917304/173510532-09a2930d-83f2-4137-b483-b5461c6e3ed4.png)
 
+Use the Golden Ticket to access other machine.
 
 This will open a new command prompt with elevated privileges to all machines.
 ```markdown
@@ -37,5 +38,8 @@ dir \\DESKTOP-1\c$
 ```
 
 ![OnPaste 20220614-121503](https://user-images.githubusercontent.com/106917304/173511018-f5e167eb-8cd5-46d9-91a3-d8c4ab2ce233.png)
+
+
+![OnPaste 20220614-122214](https://user-images.githubusercontent.com/106917304/173512248-f68d86b3-ed7e-47c3-8ca8-dfa09be766f2.png)
 
 
